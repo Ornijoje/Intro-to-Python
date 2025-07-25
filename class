@@ -1,0 +1,75 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNWQLScbn3d3PIvVRuN9uzq",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Ornijoje/Intro-to-Python/blob/main/class\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 5,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Rf-24cGM5slb",
+        "outputId": "b71b2f3f-54fa-4c26-99f9-04c77d5d432b"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<__main__.Student object at 0x7f67014d5cd0>\n",
+            "Charlie\n",
+            "Hello, my name is Charlie and I am 19 years old. My grade is 72\n",
+            "None\n"
+          ]
+        }
+      ],
+      "source": [
+        "class Student:\n",
+        "    def __init__(self, name, age, grade):\n",
+        "        self.name = name\n",
+        "        self.age = age\n",
+        "        self.grade = grade\n",
+        "\n",
+        "    def greet(self):\n",
+        "        print(f\"Hello, my name is {self.name} and I am {self.age} years old. My grade is {self.grade}\")\n",
+        "    def is_passed(self):\n",
+        "        return self.grade >= 50\n",
+        "\n",
+        "s3 = Student(\"Charlie\", 19, 72)\n",
+        "\n",
+        "s1 = Student(\"Mary\", 20, 30)\n",
+        "\n",
+        "s2 = Student(\"Peter\", 22, 25)\n",
+        "\n",
+        "print(s3)\n",
+        "print(s3.name)\n",
+        "print(s3.greet())"
+      ]
+    }
+  ]
+}
